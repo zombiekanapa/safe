@@ -1,0 +1,50 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // Shelter Markers Validation
+    function isValidShelter(data) {
+      return data.latitude is number && 
+             data.longitude is number && 
+             data.description is string && data.description.size() <= 500 &&
+             data.status is string &&
+             data.type is string;
+    }
+
+    match /shelters/{shelterId} {
+      // PROTOTYPE MODE: Allow public read and create for seeding
+      // In production, we would restrict 'create/update/delete' to Admins
+      allow read: if true; 
+      allow create: if isValidShelter(request.resource.data);
+      allow update, delete: if isSignedIn(); // Basic protection for existing data
+    }
+
+    match /users/{userId} {
+      allow read, write: if isSignedIn() && request.auth.uid == userId;
+    }
+
+    // Connection check document
+    match /system/connection-check {
+      allow read: if true;
+    }
+
+    // Fallback for developers
+    match /system/{allPaths=**} {
+      allow read: if true;
+    }
+  }
+}

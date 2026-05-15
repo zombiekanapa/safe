@@ -1,0 +1,45 @@
+{
+  "project_name": "Szczecin SafePoint Navigator",
+  "version": "0.1.0-MVP",
+  "mission": "Provide civilian emergency navigation in Szczecin using Google Maps and Firebase. Prioritize underground high-shielding locations.",
+  "aesthetic_guidelines": {
+    "theme": "Bold Typography / Neon Brutalist",
+    "palette": {
+      "bg": "#0A0A0A",
+      "surface": "#1A1A1A",
+      "accent": "#FFD700",
+      "danger": "#FF3E3E",
+      "safe": "#00FF66",
+      "text": "#FFFFFF"
+    },
+    "fonts": "Helvetica Neue / Inter (900 Weight), JetBrains Mono for metadata",
+    "icons": "Lucide-react for UI, Unicode \u2622 for map markers"
+  },
+  "technical_context": {
+    "framework": "React (Vite) + Tailwind CSS",
+    "backend": "Firebase Firestore",
+    "mapping": "@googlemaps/react-wrapper",
+    "data_model": {
+      "collection": "shelters",
+      "fields": ["latitude", "longitude", "description", "status", "type", "availability", "verifiedByGov"]
+    }
+  },
+  "tactical_knowledge": [
+    {
+      "sector": "ALPHA",
+      "description": "Major Hubs (Kaskada, Galaxy, Train Station)",
+      "priority": "Extreme"
+    },
+    {
+      "sector": "BETA",
+      "description": "Tactical Underpasses (Brama Portowa, Pl. Rodła)",
+      "priority": "Immediate Cover"
+    },
+    {
+      "sector": "GAMMA/DELTA",
+      "description": "Historical Tunnels & Industrial Foundations",
+      "priority": "Strategic Depth"
+    }
+  ],
+  "agent_instructions": "Maintain the brutalist aesthetic. All labels must be uppercase. Prioritize accessibility and high-contrast logic. When editing markers, use the 30-point tactical dataset stored in Sidebar.tsx. Security must balance prototype-seeding with future admin-only verification."
+}

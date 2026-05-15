@@ -1,0 +1,31 @@
+Name,Latitude,Longitude,Description,Status,Type
+CH KASKADA,53.4297,14.5532,"Parking level -1. Reinforced concrete. Massive capacity. Quick ramp access.",adminVerified,undergroundParking
+GALAXY CENTER,53.4328,14.5583,"Deep underground parking -1/-2. High structural integrity. Multiple escape routes.",adminVerified,undergroundParking
+BUNKIER GRUNWALDZKI,53.425,14.545,"Civil Defense shelter. Historical depth 5m. Strong overhead slab.",officialGovernmentVerified,shelter
+FILHARMONIA SZCZECIŃSKA,53.4294,14.5587,"Underground parking level -2. Massive modern reinforcement. High shielding.",adminVerified,undergroundParking
+DWORZEC GŁÓWNY,53.4187,14.5505,"Largest civilian nuclear-rated shelter. Entrance via train platform tunnels.",officialGovernmentVerified,shelter
+POSEJDON CENTER,53.4246,14.5502,"Modern deep parking -2/-3. High security core. Brama Portowa tactical hub.",adminVerified,undergroundParking
+WAŁY CHROBREGO TUNNELS,53.4312,14.5651,"Complex beneath Voivodeship Office. Tactical depth. Multiple vents.",officialGovernmentVerified,shelter
+HANZA TOWER DEEP,53.4357,14.5544,"Modern skyscraper foundations. Levels -2/-3. High mass shielding.",adminVerified,undergroundParking
+TURZYN PARKING,53.4225,14.5365,"Underground lot -1. Immediate cover for Turzyn market district.",adminVerified,undergroundParking
+BLACK PEARL VAULT,53.4278,14.5512,"Deep parking level. Reinforced commercial basement system.",adminVerified,undergroundParking
+BRAMA PORTOWA SUB,53.4245,14.5518,"Pedestrian tunnels. Immediate protection from shrapnel and aerial bursts.",adminVerified,subwayStation
+PLAC RODŁA SUB,53.4318,14.5552,"Underground crossing linking Pazim/Galaxy. Strong concrete overhead.",adminVerified,subwayStation
+ZAMEK TUNNELS,53.4265,14.5605,"Basements and historical tunnels under the castle courtyards.",officialGovernmentVerified,shelter
+URZĄD MIASTA (OC-1),53.4335,14.5482,"Official Civil Defense shelter. Entrance from rear courtyard.",officialGovernmentVerified,shelter
+MANHATTAN BASEMENT,53.441,14.5515,"Underground storage and service area. Quick escape from market.",adminVerified,undergroundStore
+JAGIELLOŃSKA REINFORCED,53.4255,14.5415,"Historical Luftschutz legacy basements. Deep and connected.",adminVerified,shelter
+RAYSKIEGO VAULTS,53.433,14.5525,"Connected basement network. Thick masonry. Improvised cover.",adminVerified,shelter
+KINO PIONIER SUB,53.4242,14.554,"Oldest cinema basement. Reinforced substructure.",adminVerified,shelter
+PLAC NOAKOWSKIEGO,53.4282,14.5422,"Post-German air raid bunker. Overgrown/partially blocked but structurally sound.",adminVerified,shelter
+PUM POMORZANY TUNNELS,53.4115,14.5325,"Hospital tunnel network connecting blocks. High safety rating.",officialGovernmentVerified,shelter
+SZPITAL ARKOŃSKA,53.4542,14.548,"Extensive underground corridor network.",officialGovernmentVerified,shelter
+STARA RZEŹNIA VAULTS,53.4215,14.5802,"Reinforced brick basements. Łasztownia immediate cover.",adminVerified,undergroundStore
+MCN TECHNICAL BASE,53.424,14.578,"Underground technical deck. Modern reinforced concrete foundations.",adminVerified,undergroundParking
+UNIWERSYTET PIASTÓW,53.431,14.5442,"Massive basement laboratories and corridor system.",adminVerified,shelter
+CMENTARZ CENTRALNY,53.4152,14.5445,"Large OC shelter near main gate. Underground bunker system.",officialGovernmentVerified,shelter
+NETTO ARENA STORAGE,53.4375,14.5385,"Underground storage/technical levels of the arena.",adminVerified,undergroundStore
+PAZIM DEEP DECK,53.4285,14.5682,"Underground service deck level -2. High mass shielding.",adminVerified,undergroundParking
+KASPROWICZA BUNKERS,53.4415,14.542,"Historical shelters near Summer Theater. Tactical cover in park.",adminVerified,shelter
+BULWAR PIASTOWSKI,53.425,14.558,"Bridge foundations and service basements. Improvised riverside cover.",adminVerified,shelter
+KRZYWOUSTEGO SHOPS,53.4212,14.5425,"Deep commercial basements along main shopping street.",adminVerified,undergroundStore

@@ -1,0 +1,6 @@
+{
+  "name": "Szczecin SafePoint Navigator",
+  "description": "An emergency evacuation map for Szczecin, focusing on underground safety points and offline preparedness resources.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["mapping", "emergency-info"]
+}

@@ -1,0 +1,49 @@
+{
+  "entities": {
+    "ShelterMarker": {
+      "title": "Shelter Marker",
+      "description": "An emergency evacuation point, typically underground.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" },
+        "description": { "type": "string" },
+        "iconType": { "type": "string", "enum": ["projectLogo", "emergencyIcon", "officialVerifiedIcon"] },
+        "status": { "type": "string", "enum": ["adminVerified", "userProposed", "officialGovernmentVerified"] },
+        "type": { "type": "string", "enum": ["undergroundParking", "undergroundStore", "subwayStation", "shelter", "other"] },
+        "availability": { "type": "string" },
+        "adminNotes": { "type": "string" },
+        "verifiedByGov": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["latitude", "longitude", "description", "status"]
+    },
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "User account information and preferences.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "username": { "type": "string" },
+        "phoneNumber": { "type": "string" },
+        "role": { "type": "string", "enum": ["unregistered", "registered", "publicAdmin", "admin"] },
+        "subscribedToAlerts": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "role"]
+    }
+  },
+  "firestore": {
+    "/shelters/{shelterId}": {
+      "schema": "ShelterMarker",
+      "description": "Public emergency evacuation points."
+    },
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "Private user profiles."
+    }
+  }
+}
