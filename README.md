@@ -1,0 +1,2 @@
+# safe
+safepoint navigator test
